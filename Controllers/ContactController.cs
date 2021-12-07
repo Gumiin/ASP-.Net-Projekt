@@ -59,6 +59,16 @@ namespace Lab_5_2.Controllers
            repository.Update(contact);
            return View("List", repository.FindAll());  
         }
+
+        public IActionResult Issue()
+        {
+            Issue isssue = new Issue()
+            {
+                Title = "Test",
+                Date = new DateTime()
+            };
+            IContactRepository; ;
+        }
     }
 }
 
