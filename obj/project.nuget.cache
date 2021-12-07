@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DKRuItqcbo+Qq0qbUZ2jinI0G83sAHGIjb5aQhdEUAP+fZRR9HRTNgj0Ixrdw9Pjl3l3sCSFeMhFnovsp7p9Hw==",
+  "dgSpecHash": "ai6SNyRqWtdigcD4wKzGEMcwmXR+XwIn7HNNebV21E5CgCinONPmDZ1S64+Mseb/XWjyvV19PTRwp6Vf0gAerw==",
   "success": true,
-  "projectFilePath": "D:\\kodowanko\\vs c#\\projekt asp\\Lab-5-2.csproj",
+  "projectFilePath": "D:\\kodowanko\\vs c#\\git asp\\ASP-.Net-Projekt\\Lab-5-2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\kodowanko\\vs c#\\projekt asp\\Lab-5-2.csproj": {}
+    "D:\\kodowanko\\vs c#\\git asp\\ASP-.Net-Projekt\\Lab-5-2.csproj": {}
   },
   "projects": {
-    "D:\\kodowanko\\vs c#\\projekt asp\\Lab-5-2.csproj": {
+    "D:\\kodowanko\\vs c#\\git asp\\ASP-.Net-Projekt\\Lab-5-2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\kodowanko\\vs c#\\projekt asp\\Lab-5-2.csproj",
+        "projectUniqueName": "D:\\kodowanko\\vs c#\\git asp\\ASP-.Net-Projekt\\Lab-5-2.csproj",
         "projectName": "Lab-5-2",
-        "projectPath": "D:\\kodowanko\\vs c#\\projekt asp\\Lab-5-2.csproj",
+        "projectPath": "D:\\kodowanko\\vs c#\\git asp\\ASP-.Net-Projekt\\Lab-5-2.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\kodowanko\\vs c#\\projekt asp\\obj\\",
+        "outputPath": "D:\\kodowanko\\vs c#\\git asp\\ASP-.Net-Projekt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
