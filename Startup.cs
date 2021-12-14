@@ -4,6 +4,7 @@ using Lab_5_2.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,7 +24,7 @@ namespace Lab_5_2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options => 
+            services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration["Data:Connection"]));
             services.AddTransient<IContactRepository, EFContactRepository>();
             services.AddTransient<ICRUDContactRepository, EFCRUDContactRepository>();
@@ -38,6 +39,9 @@ namespace Lab_5_2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+                
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -65,6 +69,16 @@ namespace Lab_5_2
                 context.Response.WriteAsync("Hello from ASP.NET");
                 return Task.CompletedTask;
             });
+
         }
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllersWithViews();
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:AppIdentity:ConnectionString"]));
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
+            services.AddMemoryCache();
+            services.AddSession();
+        }
+
     }
 }
