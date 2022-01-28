@@ -1,0 +1,59 @@
+﻿@model Product
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Product</h2>
+            <hr />
+        </div>
+        @*<div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" rows="3" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ProductCode"></label>
+            <input asp-for="ProductCode" class="form-control" />
+            <span asp-validation-for="ProductCode" class="text-danger"></span>
+        </div>
+
+        @*
+        brak selecta    
+        <div class="mb-3">
+            <label asp-for="Producent"></label>
+            <input asp-for="Producent" class="form-control" />
+            <span asp-validation-for="Producent" class="text-danger"></span>
+        </div>*@
+        <div class="mb-3">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        @*
+            Nie działa niestety
+        <div class="mb-3">
+            <label asp-for="CategoryId"></label>
+            <celect asp-for="CategoryId" asp-item="@(ViewData["CategoryList"] as IEnumerable<SelectList>)" class="form-control">
+                <option disabled selected>--Select Category--</option>
+            </celect>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>*@
+        <button type="submit" class="btn btn-success" style="width:150px;">Create</button>
+        <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px;">
+            Back to List
+        </a>
+
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

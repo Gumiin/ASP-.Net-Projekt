@@ -1,0 +1,15 @@
+﻿@if(TempData["succes"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type ="text/javascript">
+        alert('@TempData["succes"]');
+    </script>
+}
+
+@if(TempData["error"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type ="text/javascript">
+        alert('@TempData["error"]');
+    </script>
+}
